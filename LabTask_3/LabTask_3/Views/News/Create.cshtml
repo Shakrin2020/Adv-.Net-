@@ -1,0 +1,20 @@
+﻿@model LabTask_3.Models.Database.Newdatabas
+@{
+        ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/News/Create" method="POST">
+
+    <input type="text" name="Title" value="@Model.Title" placeholder="Title" class="form-control" />
+   
+    <input type="text" name="Description" value="@Model.Description" placeholder="Description" class="form-control" />
+  
+    <input type="text" name="Category" value="@Model.Category" placeholder="Category" class="form-control" />
+  
+    <input type="text" name="PublishDate" value="@Model.PublishDate" placeholder="Publication Date" class="form-control" />
+  
+    <input type="submit" value="Add New News" />
+
+</form>

@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    <title>Logged In</title>
+</head>
+<body>
+
+    <div> <a href="/Student/Home" class="btn btn-success"> Home</a> <a href="/Product/List" class="btn btn-danger"> List</a></div>
+    <div>
+        @RenderBody()
+    </div>
+
+    <div>&copy; ADV .NET Spring 2021-22</div>
+</body>
+</html>
