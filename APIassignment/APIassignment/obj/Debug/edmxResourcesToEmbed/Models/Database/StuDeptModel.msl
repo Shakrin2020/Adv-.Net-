@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="apidbModelStoreContainer" CdmEntityContainer="apidbEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="apidbModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="D_Id" ColumnName="D_Id" />
+          <ScalarProperty Name="D_Name" ColumnName="D_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="apidbModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+          <ScalarProperty Name="S_Name" ColumnName="S_Name" />
+          <ScalarProperty Name="S_Dob" ColumnName="S_Dob" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
